@@ -1,6 +1,6 @@
 // helper/formatDate.js
 
-const moment = require("helpers");
+const moment = require("moment");
 
 function formatMessage(username, text) {
   return {
