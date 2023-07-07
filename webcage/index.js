@@ -27,7 +27,7 @@ io.on("connection", (socket) => {
     // General welcome
     socket.emit(
       "message",
-      formatMessage("WebCage", "Messages are limited to this room! ")
+      formatMessage("Gurang Chat App", "Messages are limited to this room! ")
     );
 
     // Broadcast everytime users connects
@@ -35,7 +35,7 @@ io.on("connection", (socket) => {
       .to(user.room)
       .emit(
         "message",
-        formatMessage("WebCage", `${user.username} has joined the room`)
+        formatMessage("Gurang Chat App", `${user.username} has joined the room`)
       );
 
     // Current active users and room name

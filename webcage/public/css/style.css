@@ -34,7 +34,7 @@ a {
   cursor: pointer;
   padding: 5px 15px;
   background: var(--dark-color-a);
-  color: var(--dark-color-c);
+  color: #fff;
   border: 0;
   font-size: 17px;
   font-weight: bold;
@@ -64,6 +64,7 @@ a {
 .chat-main {
   display: grid;
   grid-template-columns: 1fr 3fr;
+  height: 80%;
 }
 
 .chat-sidebar {
@@ -176,15 +177,20 @@ i.fas.fa-paper-plane {
 
 .join-header {
   text-align: center;
-  padding: 20px;
+  padding: 30px;
   background: var(--dark-color-a);
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
+}
+i {
+  padding-right: 6px;
 }
 
 .join-main {
   padding: 30px 40px;
   background: var(--dark-color-b);
+  color: var(--dark-color-a);
+  font-weight: bold;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
 }
